@@ -71,7 +71,7 @@ const Header = () => {
                 />
             </MobileNav>
             <MobileNavMenu>
-                <MobileNavLink>
+                <MobileNavLink to="/">
                     <MobileIcon
                         src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-home-icon.png"
                         alt="nav-home"
@@ -80,10 +80,10 @@ const Header = () => {
                         width="32px"
                         className={homeIconLoaded ? "loaded" : ""}
                         onLoad={() => setHomeIconLoaded(true)}
-                        onClick={handleMobileLogOut}
+
                     />
                 </MobileNavLink>
-                <MobileNavLink>
+                <MobileNavLink to="/products">
                     <MobileIcon
                         src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-products-icon.png"
                         alt="nav-products"
@@ -92,11 +92,9 @@ const Header = () => {
                         width="32px"
                         className={productsIconLoaded ? "loaded" : ""}
                         onLoad={() => setProductsIconLoaded(true)}
-                        onClick={handleMobileLogOut}
-
                     />
                 </MobileNavLink>
-                <MobileNavLink>
+                <MobileNavLink to="/cart">
                     <MobileIcon
                         src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png "
                         alt="nav-cart"
@@ -105,7 +103,7 @@ const Header = () => {
                         width="32px"
                         className={cartIconLoaded ? "loaded" : ""}
                         onLoad={() => setCartIconLoaded(true)}
-                        onClick={handleMobileLogOut}
+
                     />
                 </MobileNavLink>
             </MobileNavMenu>
